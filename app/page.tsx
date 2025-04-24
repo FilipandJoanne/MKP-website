@@ -1,4 +1,4 @@
-// app/page.tsx — Asteria-style homepage with placeholders
+// app/page.tsx — Homepage with product line placeholders matching nav
 
 export default function HomePage() {
     return (
@@ -17,22 +17,40 @@ export default function HomePage() {
           </a>
         </section>
   
-        {/* Product Previews */}
-        <section id="products">
-          <h2 className="text-2xl font-semibold mb-6 text-center">Popular Map Styles</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="border rounded-lg overflow-hidden shadow-sm bg-white">
-                <div className="bg-gray-200 aspect-[3/4] flex items-center justify-center">
-                  <span className="text-gray-400">Artwork {i}</span>
-                </div>
-                <div className="p-4">
-                  <p className="font-medium">City Name {i}</p>
-                  <p className="text-sm text-gray-500">Style: Modern | Size: A3</p>
-                </div>
-              </div>
-            ))}
-          </div>
+        {/* Section Placeholders */}
+        <section id="company" className="text-center">
+          <h2 className="text-2xl font-semibold mb-2">Company</h2>
+          <p className="text-gray-600">About us and our mission to make personalized artwork more meaningful.</p>
+        </section>
+  
+        <section id="star-map" className="text-center">
+          <h2 className="text-2xl font-semibold mb-2">Star Map</h2>
+          <p className="text-gray-600">Design a custom star map for special dates — coming soon.</p>
+        </section>
+  
+        <section id="location-map" className="text-center">
+          <h2 className="text-2xl font-semibold mb-2">Location Map</h2>
+          <p className="text-gray-600">Turn your favorite place into minimalist map prints — preview our builder!</p>
+        </section>
+  
+        <section id="cityscape-art" className="text-center">
+          <h2 className="text-2xl font-semibold mb-2">Cityscape Art</h2>
+          <p className="text-gray-600">Art prints of famous skylines and iconic cities — coming to the store soon.</p>
+        </section>
+  
+        <section id="frames" className="text-center">
+          <h2 className="text-2xl font-semibold mb-2">Frames</h2>
+          <p className="text-gray-600">High-quality wooden frames to complement your personalized map prints.</p>
+        </section>
+  
+        <section id="phone-covers" className="text-center">
+          <h2 className="text-2xl font-semibold mb-2">Phone Covers</h2>
+          <p className="text-gray-600">Stylish phone cases with your custom map designs — launching soon.</p>
+        </section>
+  
+        <section id="mugs" className="text-center">
+          <h2 className="text-2xl font-semibold mb-2">Mugs</h2>
+          <p className="text-gray-600">Enjoy your favorite place with every sip — mugs with map prints coming soon.</p>
         </section>
   
         {/* Testimonials */}
